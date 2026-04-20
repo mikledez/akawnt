@@ -40,6 +40,7 @@
             min-height: 100vh;
             margin: 0;
             padding: 0;
+            padding-top: 60px;
         }
 
         main { flex: 1; }
@@ -48,6 +49,41 @@
             font-family: 'Syne', sans-serif;
             font-weight: 800;
         }
+
+        /* Navbar */
+        .auth-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--paper);
+            border-bottom: 1.5px solid var(--border);
+            padding: 1rem 0;
+            z-index: 100;
+        }
+        .auth-nav .navbar-brand {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 800;
+            font-size: 1.35rem;
+            color: var(--ink) !important;
+            letter-spacing: -0.03em;
+            text-decoration: none;
+        }
+        .auth-nav .navbar-brand span { color: var(--accent); }
+        .auth-nav .nav-cta {
+            background: var(--accent);
+            color: #fff !important;
+            border-radius: 4px;
+            padding: 0.4rem 1.2rem !important;
+            text-decoration: none;
+            font-family: 'Syne', sans-serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            transition: opacity 0.2s;
+        }
+        .auth-nav .nav-cta:hover { opacity: 0.88; color: #fff !important; }
 
         /* Auth Layout */
         .auth-container {
@@ -282,6 +318,13 @@
 </head>
 
 <body>
+    <nav class="auth-nav">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="{{ route('home') }}">Akaw<span>nt</span></a>
+            <a class="nav-cta" href="{{ route('home') }}">Home</a>
+        </div>
+    </nav>
+
     <div class="auth-container">
         @yield('content')
     </div>

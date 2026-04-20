@@ -1,7 +1,7 @@
  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
     <div class="container">
 
-        <a class="navbar-brand" href="#home">Akawnt</a>
+        <a class="navbar-brand" href="#home">Akaw<span>nt</span></a>
 
         <button class="navbar-toggler border-0" type="button"
                 data-bs-toggle="collapse" data-bs-target="#navMenu"
