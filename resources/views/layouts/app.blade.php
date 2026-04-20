@@ -361,7 +361,7 @@
         .job-card:hover {
             transform: translateY(-4px);
             border-color: var(--accent);
-            box-shadow: 0 8px 32px rgba(200,75,49,0.12);
+            box-shadow: 0 8px 32px #ccd7d9;
         }
         .job-tag {
             display: inline-block;
