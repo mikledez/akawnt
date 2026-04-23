@@ -1,6 +1,5 @@
-<nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+<nav id="mainNav" class="navbar navbar-expand-lg fixed-top transparent">
     <div class="container">
-
         <a class="navbar-brand" href="#home">Akawnt</a>
 
         <button class="navbar-toggler border-0" type="button"
@@ -25,19 +24,10 @@
                         <a class="nav-link nav-cta" href="{{ route('applicant.dashboard') }}">Dashboard</a>
                     </li>
                 @else
-                    <li class="nav-item dropdown ms-lg-2">
-                        <a class="nav-link nav-cta dropdown-toggle" href="#" id="loginDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Login
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="loginDropdown">
-                            <li><a class="dropdown-item" href="{{ route('login') }}">Applicant Login</a></li>
-                            <li><a class="dropdown-item" href="{{ route('admin.login') }}">Admin Login</a></li>
-                        </ul>
+                    <li class="nav-item ms-lg-2">
+                        <a class="nav-link nav-cta" href="{{ route('login') }}">Login</a>
                     </li>
                 @endif
-                <li class="nav-item ms-lg-2">
-                    <a class="nav-link nav-cta" href="#contact">Apply Now</a>
-                </li>
             </ul>
         </div>
     </div>
