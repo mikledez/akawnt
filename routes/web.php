@@ -84,6 +84,9 @@ Route::middleware(['auth:admin', 'admin'])->prefix('admin')->name('admin.')->gro
     Route::get('/reports/applications/pdf', '\App\Http\Controllers\Admin\AdminReportsController@exportApplicationsPdf')->name('reports.applications.pdf');
     Route::get('/reports/accountants/excel', '\App\Http\Controllers\Admin\AdminReportsController@exportAccountantsExcel')->name('reports.accountants.excel');
     Route::get('/reports/accountants/pdf', '\App\Http\Controllers\Admin\AdminReportsController@exportAccountantsPdf')->name('reports.accountants.pdf');
+
+    // Support
+    Route::get('/support', [AdminController::class, 'support'])->name('support');
 });
 
 // Applicant Routes
@@ -103,4 +106,5 @@ Route::middleware(['auth', 'applicant'])->prefix('dashboard')->name('applicant.'
     Route::put('/profile', [ApplicantDashboardController::class, 'updateProfile'])->name('profile.update');
     Route::get('/password/change', [ApplicantDashboardController::class, 'changePassword'])->name('password.change');
     Route::put('/password', [ApplicantDashboardController::class, 'updatePassword'])->name('password.update');
+    Route::get('/support', [ApplicantDashboardController::class, 'support'])->name('support');
 });

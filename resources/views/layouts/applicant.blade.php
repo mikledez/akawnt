@@ -218,6 +218,12 @@
                     <span>Reports</span>
                 </a>
             </li>
+            <li class="sidebar-nav-item">
+                <a href="{{ route('applicant.support') }}" class="sidebar-nav-link {{ request()->routeIs('applicant.support') ? 'active' : '' }}">
+                    <i class="bi bi-question-circle"></i>
+                    <span>Support</span>
+                </a>
+            </li>
         </ul>
     </aside>
 

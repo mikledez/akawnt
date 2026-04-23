@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </a>
 </nav>
 <div class="pt-6 border-t border-slate-200 space-y-3">
-<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:text-slate-700 hover:bg-slate-200/50 transition-colors duration-200 rounded-lg" href="#">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:text-slate-700 hover:bg-slate-200/50 transition-colors duration-200 rounded-lg" href="{{ route('admin.support') }}">
 <span class="material-symbols-outlined">help_outline</span>
 <span>Support</span>
 </a>

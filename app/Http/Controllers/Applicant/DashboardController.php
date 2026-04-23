@@ -43,6 +43,11 @@ class DashboardController extends Controller
         return view('applicant.settings', compact('user', 'application', 'clientsCount'));
     }
 
+    public function support()
+    {
+        return view('applicant.support');
+    }
+
     public function editProfile()
     {
         $user = Auth::user();
