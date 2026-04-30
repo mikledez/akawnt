@@ -47,7 +47,7 @@
                     <option value="verified" {{ request('filter') == 'verified' ? 'selected' : '' }}>Verified</option>
                     <option value="unverified" {{ request('filter') == 'unverified' ? 'selected' : '' }}>Unverified</option>
                 </select>
-                <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+                <i class="bi bi-chevron-down absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none"></i>
             </div>
             <button type="submit" class="button button-primary">Search</button>
         </form>

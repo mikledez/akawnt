@@ -92,7 +92,7 @@
                     <option value="accepted" @if(request('status') == 'accepted') selected @endif>Accepted</option>
                     <option value="declined" @if(request('status') == 'declined') selected @endif>Declined</option>
                 </select>
-                <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+                <i class="bi bi-chevron-down absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none"></i>
             </div>
             <button type="submit" class="button button-primary">Search</button>
         </form>
