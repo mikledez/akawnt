@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 </script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <style>
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
@@ -170,10 +171,6 @@ document.addEventListener('DOMContentLoaded', () => {
 </a>
 </nav>
 <div class="pt-6 border-t border-slate-200 space-y-3">
-<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:text-slate-700 hover:bg-slate-200/50 transition-colors duration-200 rounded-lg" href="{{ route('applicant.support') }}">
-<span class="material-symbols-outlined">help_outline</span>
-<span>Support</span>
-</a>
 <div class="flex items-center gap-3 px-4 py-3">
 <div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center">
 <span class="material-symbols-outlined text-primary">{{ substr(Auth::user()->name, 0, 1) }}</span>

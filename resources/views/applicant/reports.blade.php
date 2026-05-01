@@ -28,7 +28,7 @@
                         <option value="tax_report" @if($type == 'tax_report') selected @endif>Tax Report</option>
                         <option value="audit_report" @if($type == 'audit_report') selected @endif>Audit Report</option>
                     </select>
-                    <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+                    <i class="bi bi-chevron-down absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none"></i>
                 </div>
             </div>
             <div>
@@ -40,7 +40,7 @@
                         <option value="month" @if($dateRange == 'month') selected @endif>This Month</option>
                         <option value="year" @if($dateRange == 'year') selected @endif>This Year</option>
                     </select>
-                    <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+                    <i class="bi bi-chevron-down absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none"></i>
                 </div>
             </div>
             <div class="flex items-end">

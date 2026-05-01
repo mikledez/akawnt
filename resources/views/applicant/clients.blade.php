@@ -41,7 +41,7 @@
                     <option value="active" @if(request('status') == 'active') selected @endif>Active</option>
                     <option value="inactive" @if(request('status') == 'inactive') selected @endif>Inactive</option>
                 </select>
-                <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+                <i class="bi bi-chevron-down absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none"></i>
             </div>
             <button type="submit" class="px-6 py-2.5 bg-primary text-on-primary text-sm font-bold rounded-lg hover:bg-primary-dim transition-colors">
                 Search
